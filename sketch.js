@@ -105,24 +105,23 @@ function setup() {
     stars = [];
 
     // Planet metric data from https://nssdc.gsfc.nasa.gov/planetary/factsheet/
-    // orbits is not to scale
+    // orbits of planets is not to scale
     planets.push(createPlanet(67.9 / 2, 0, 0, 'yellow', "SUN"));
-    planets.push(createPlanet(4.8, 47.4, 65, 'gray', "MERCURY"));
+    planets.push(createPlanet(4.8, 47.4, 65, 'GoldenRod', "MERCURY"));
     planets.push(createPlanet(12.1, 35.0, 90, 'orange', "VENUS"));
-    planets.push(createPlanet(12.7, 29.8, 125, 'blue', "EARTH"));
+    planets.push(createPlanet(12.7, 29.8, 125, 'green', "EARTH"));
     planets.push(createPlanet(6.7, 24.1, 175, 'red', "MARS"));
-    planets.push(createPlanet(14.2 * 2, 13.1, 225, 'orange', "JUPITER"));
-    planets.push(createPlanet(12 * 2, 9.7, 275, 'yellow', "SATURN"));
-    planets.push(createPlanet(5.1, 6.8, 325, 'blue', "URANUS"));
-    planets.push(createPlanet(4.9 * 2, 5.4, 375, 'purple', "NEPTUNE"));
-    planets.push(createPlanet(2.3, 4.7, 450, 'grey', "PLUTO"));
+    planets.push(createPlanet(14.2 * 2, 13.1, 225, 'BlanchedAlmond', "JUPITER"));
+    planets.push(createPlanet(12 * 2, 9.7, 275, 'Khaki', "SATURN"));
+    planets.push(createPlanet(5.1, 6.8, 325, 'SkyBlue', "URANUS"));
+    planets.push(createPlanet(4.9 * 2, 5.4, 375, 'RoyalBlue', "NEPTUNE"));
+    planets.push(createPlanet(2.3, 4.7, 450, 'SandyBrown', "PLUTO"));
 
     for (let x = 0; x < 800; x++) {
         stars.push(new Star());
     }
 }
 
-// Animation Loop
 function motion() {
 
     requestAnimationFrame(motion);
